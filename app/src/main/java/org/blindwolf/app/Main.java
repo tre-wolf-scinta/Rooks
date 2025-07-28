@@ -2,20 +2,23 @@ package org.blindwolf.app;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import org.blindwolf.app.view.ChessboardView; 
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Label label = new Label("Hello, Chess World!");
-        StackPane root = new StackPane(label);
-        Scene scene = new Scene(root, 640, 480);
+        // 1. Instantiate chessboard view.
+        ChessboardView board = new ChessboardView();
 
-        primaryStage.setTitle("Rooks - Chess App");
+        // 2. Create the scene, using the board as its root.
+        Scene scene = new Scene(board, ChessboardView.BOARD_SIZE * ChessboardView.SQUARE_SIZE, ChessboardView.BOARD_SIZE * ChessboardView.SQUARE_SIZE);
+
+        // 3. Set up and show the stage.
+        primaryStage.setTitle("Rooks");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

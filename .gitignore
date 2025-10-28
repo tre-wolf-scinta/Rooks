@@ -1,0 +1,81 @@
+# ---- CMake build artifacts ----
+[Cc]MakeCache.txt
+[Cc]MakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+CMakeUserPresets.json
+CMakePresets.json
+Testing/
+CTestTestfile.cmake
+*.cmake
+
+# ---- Build directories ----
+/build/
+/out/
+/bin/
+/obj/
+/Debug/
+/Release/
+/x64/
+/x86/
+/dist/
+/vsbuild/
+
+# ---- Visual Studio and MSVC ----
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.opensdf
+*.sdf
+*.pdb
+*.ipch
+*.db
+*.tlog
+*.lastbuildstate
+*.user
+*.obj
+*.log
+*.idb
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+
+# ---- SFML and vcpkg ----
+# Local vcpkg build directory (if not global)
+vcpkg_installed/
+vcpkg_buildtrees/
+vcpkg_downloads/
+vcpkg_out/
+vcpkg_info/
+vcpkg_logs/
+
+# ---- IDE metadata ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- System files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Generated assets or temporary ----
+*.tmp
+*.bak
+*.swp
+*.old
+
+# ---- Logs ----
+*.log
+*.stackdump
+
+/release/
+*.zip
+*.7z
+*.tar
+*.gz

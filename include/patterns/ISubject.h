@@ -1,0 +1,1 @@
+// Interface for anything that notifies observers

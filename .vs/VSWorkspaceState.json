@@ -8,11 +8,9 @@
   "ExpandedNodes": [
     "",
     "\\include",
-    "\\include\\patterns",
-    "\\src",
-    "\\src\\app",
-    "\\src\\model"
+    "\\include\\view",
+    "\\src"
   ],
-  "SelectedNode": "\\include\\patterns\\IObserver.h",
+  "SelectedNode": "\\include\\view\\Announcer.h",
   "PreviewInSolutionExplorer": false
 }

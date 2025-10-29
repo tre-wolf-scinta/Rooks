@@ -9,8 +9,9 @@
     "",
     "\\include",
     "\\include\\view",
-    "\\src"
+    "\\src",
+    "\\src\\app"
   ],
-  "SelectedNode": "\\include\\view\\Announcer.h",
+  "SelectedNode": "\\include\\view\\VisualView.h",
   "PreviewInSolutionExplorer": false
 }

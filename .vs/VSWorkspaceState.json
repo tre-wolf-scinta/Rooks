@@ -8,11 +8,12 @@
   "ExpandedNodes": [
     "",
     "\\include",
-    "\\include\\model",
+    "\\include\\view",
     "\\src",
     "\\src\\app",
-    "\\src\\model"
+    "\\src\\model",
+    "\\src\\view"
   ],
-  "SelectedNode": "\\src\\app\\main.cpp",
+  "SelectedNode": "\\src\\view\\VisualView.cpp",
   "PreviewInSolutionExplorer": false
 }

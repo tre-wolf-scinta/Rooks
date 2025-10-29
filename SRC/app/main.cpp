@@ -1,6 +1,8 @@
 #include <SFML/Graphics.hpp>
+#include "model/Board.h"
 
 int main() {
+  Board gameBoard;      // Not used yet - testing compilation only
     // SFML 3: make a VideoMode with (size, bitsPerPixel), then window(title, style)
     sf::RenderWindow window(
         sf::VideoMode({400u, 400u}, 32u),

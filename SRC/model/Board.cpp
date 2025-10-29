@@ -1,2 +1,2 @@
 #include "model/Board.h"
-// Left empty intentionally for now
+// (All methods inline or trivial. This file is a placeholder.) 

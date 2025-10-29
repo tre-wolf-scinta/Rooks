@@ -38,7 +38,7 @@ public:
       }
     }
 
-    // Cursor outline (red)
+    // Cursor outline (red for low-vision accessibility)
     sf::RectangleShape cursor(
       sf::Vector2f(static_cast<float>(tileSize_),
         static_cast<float>(tileSize_)));
@@ -62,9 +62,8 @@ public:
   }
 
   static bool isDarkSquare(int file, int rank) {
-    return ((file + rank) % 2) == 1;
+    return Board::colorAt(file, rank) == SquareColor::Black;
   }
-
 private:
   Board& board_;
   unsigned tileSize_;

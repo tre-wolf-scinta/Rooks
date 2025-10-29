@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\app\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\view\\VisualView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\view\\VisualView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\model\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\model\\Piece.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\model\\Board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -17,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\model\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\model\\Board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\model\\Piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\model\\Piece.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\view\\VisualView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:include\\view\\VisualView.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\view\\VisualView.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -56,24 +64,34 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "VisualView.cpp",
-              "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\view\\VisualView.cpp",
-              "RelativeDocumentMoniker": "src\\view\\VisualView.cpp",
-              "ToolTip": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\view\\VisualView.cpp",
-              "RelativeToolTip": "src\\view\\VisualView.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABMAAAAAAAAAA==",
+              "Title": "Piece.cpp",
+              "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\model\\Piece.cpp",
+              "RelativeDocumentMoniker": "src\\model\\Piece.cpp",
+              "ToolTip": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\model\\Piece.cpp",
+              "RelativeToolTip": "src\\model\\Piece.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-29T19:12:21.547Z"
+              "WhenOpened": "2025-10-29T20:47:29.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Piece.h",
+              "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\model\\Piece.h",
+              "RelativeDocumentMoniker": "include\\model\\Piece.h",
+              "ToolTip": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\model\\Piece.h",
+              "RelativeToolTip": "include\\model\\Piece.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-29T20:09:56.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "VisualView.h",
               "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\view\\VisualView.h",
               "RelativeDocumentMoniker": "include\\view\\VisualView.h",
@@ -81,12 +99,11 @@
               "RelativeToolTip": "include\\view\\VisualView.h",
               "ViewState": "AgIAACgAAAAAAAAAAAAIwEIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-29T19:07:50.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T19:07:50.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Announcer.cpp",
               "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\view\\Announcer.cpp",
               "RelativeDocumentMoniker": "src\\view\\Announcer.cpp",
@@ -98,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Announcer.h",
               "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\view\\Announcer.h",
               "RelativeDocumentMoniker": "include\\view\\Announcer.h",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CMake Overview Pages",
               "DocumentMoniker": "CMake Overview Pages",
               "ToolTip": "CMake Overview Pages",
@@ -125,7 +142,7 @@
               "RelativeDocumentMoniker": "src\\app\\main.cpp",
               "ToolTip": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\app\\main.cpp",
               "RelativeToolTip": "src\\app\\main.cpp",
-              "ViewState": "AgIAACsAAAAAAAAAAAAIwDYAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwGEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-29T16:55:46.608Z",
               "EditorCaption": ""
@@ -138,7 +155,7 @@
               "RelativeDocumentMoniker": "src\\model\\Board.cpp",
               "ToolTip": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\model\\Board.cpp",
               "RelativeToolTip": "src\\model\\Board.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-29T16:53:36.168Z",
               "EditorCaption": ""
@@ -151,14 +168,26 @@
               "RelativeDocumentMoniker": "include\\model\\Board.h",
               "ToolTip": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\model\\Board.h",
               "RelativeToolTip": "include\\model\\Board.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-29T16:46:42.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
+              "Title": "VisualView.cpp",
+              "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\view\\VisualView.cpp",
+              "RelativeDocumentMoniker": "src\\view\\VisualView.cpp",
+              "ToolTip": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\src\\view\\VisualView.cpp",
+              "RelativeToolTip": "src\\view\\VisualView.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-29T19:12:21.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Observer.h",
               "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\patterns\\Observer.h",
               "RelativeDocumentMoniker": "include\\patterns\\Observer.h",
@@ -170,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ISubject.h",
               "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\patterns\\ISubject.h",
               "RelativeDocumentMoniker": "include\\patterns\\ISubject.h",
@@ -182,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "IObserver.h",
               "DocumentMoniker": "C:\\Users\\tre_s\\OneDrive\\Desktop\\rooks\\include\\patterns\\IObserver.h",
               "RelativeDocumentMoniker": "include\\patterns\\IObserver.h",
@@ -191,6 +220,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-29T16:01:33.071Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

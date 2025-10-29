@@ -4,8 +4,8 @@
 #include "view/Announcer.h"
 #include "view/VisualView.h"
 
+// Convert (file, rank) -> "A1" .. "H8"
 static std::wstring toAlgebraic(int file, int rank) {
-  // Files 0..7 => 'A'..'H', ranks 0..7 => '1'..'8'
   wchar_t f = static_cast<wchar_t>(L'A' + file);
   wchar_t r = static_cast<wchar_t>(L'1' + rank);
   std::wstring out;
@@ -14,6 +14,20 @@ static std::wstring toAlgebraic(int file, int rank) {
   return out;
 }
 
+// Human-friendly piece name: "White Pawn", "Black Rook", etc.
+static std::wstring pieceFullName(const Piece& p) {
+  const wchar_t* color = (p.getColor() == PieceColor::White) ? L"White" : L"Black";
+  const wchar_t* type = L"?";
+  switch (p.getType()) {
+  case PieceType::Pawn:   type = L"Pawn";   break;
+  case PieceType::Rook:   type = L"Rook";   break;
+  case PieceType::Knight: type = L"Knight"; break;
+  case PieceType::Bishop: type = L"Bishop"; break;
+  case PieceType::Queen:  type = L"Queen";  break;
+  case PieceType::King:   type = L"King";   break;
+  }
+  return std::wstring(color) + L" " + type;
+}
 int main() {
   sf::RenderWindow window(
     sf::VideoMode({ 640u, 640u }, 32u),
@@ -53,11 +67,25 @@ int main() {
 
         if (moved) {
           auto [f, r] = view.getCursor();
+
           const bool dark = VisualView::isDarkSquare(f, r);
           const wchar_t* colorWord = dark ? L"Black" : L"White";
-          const std::wstring coord = toAlgebraic(f, r); // e.g., E4, B3
-          announcer.speak(std::wstring(colorWord) + L" " + coord);
+          const std::wstring coord = toAlgebraic(f, r);
+
+          // Look up piece on this square
+          const Piece* piece = board.getPiece(f, r);
+
+          if (piece) {
+            // Example: "White E4, occupied by Black Pawn"
+            announcer.speak(std::wstring(colorWord) + L" " + coord +
+              L", occupied by " + pieceFullName(*piece));
+          }
+          else {
+            // Example: "White E4, empty"
+            announcer.speak(std::wstring(colorWord) + L" " + coord + L", empty");
+          }
         }
+
       }
     } 
 

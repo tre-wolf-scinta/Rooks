@@ -9,7 +9,6 @@
     "",
     "\\include",
     "\\include\\model",
-    "\\include\\view",
     "\\src",
     "\\src\\app",
     "\\src\\model"

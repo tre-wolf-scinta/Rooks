@@ -1,28 +1,24 @@
 #pragma once
 #include <string>
-#include <memory>
 #include <Windows.h>
-#include <sapi.h>     // SAPI for screenreader-agnostic voice output
-#include <wrl/client.h>         // For Microsoft::WRL::ComPtr
-#include "patterns/IObserver.h"     // Interface
-#include "model/Board.h"      // Board is a subject
+#include <sapi.h>
+#include <wrl/client.h>
 
-// Announcer observes the board and provides voice output via SAPI
+#include "patterns/IObserver.h"
+#include "model/Board.h"
+
 class Announcer : public IObserver {
 public:
-  explicit Announcer(Board& board);      // explicit to disallow implicit Board to Announcer conversions
+  explicit Announcer(Board& board);
   ~Announcer() override;
 
-  // Observer callback
   void update() override;
-
-  // Public utility - Called from controller
-  void speak(const std::wstring& msg);      // wstring because SAPI expects wide strings
+  void speak(const std::wstring& msg);
 
 private:
   Board& board_;
-  Microsoft::WRL::ComPtr<ISpVoice> voice_;      // COM smart pointer
+  Microsoft::WRL::ComPtr<ISpVoice> voice_;
 
-  // Initialize SAPI voice
   bool initVoice();
+  void cleanupVoice();
 };

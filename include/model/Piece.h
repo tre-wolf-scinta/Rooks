@@ -1,5 +1,9 @@
 #pragma once
 #include <string>
+#include <memory>
+
+#include "strategy/IMove.h"
+#include "strategy/PawnStrategy.h"
 
 enum class PieceColor { White, Black };
 enum class PieceType { King, Queen, Rook, Bishop, Knight, Pawn };
@@ -7,8 +11,19 @@ enum class PieceType { King, Queen, Rook, Bishop, Knight, Pawn };
 class Piece {
 public:
   Piece(PieceColor color, PieceType type)
-    : color_(color), type_(type) {
+    : color_(color), type_(type)
+  {
+    switch (type_) {
+    case PieceType::Pawn:
+      strategy_ = std::make_unique<PawnStrategy>();
+      break;
+    default:
+      strategy_.reset();
+      break;
+    }
   }
+
+  virtual ~Piece() = default;
 
   PieceColor getColor() const { return color_; }
   PieceType  getType()  const { return type_; }
@@ -25,8 +40,10 @@ public:
     return L"?";
   }
 
+  const IMove* getStrategy() const { return strategy_.get(); }
+
 private:
   PieceColor color_;
   PieceType  type_;
-}
-;
+  std::unique_ptr<IMove> strategy_;
+};

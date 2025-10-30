@@ -9,12 +9,13 @@
     "",
     "\\include",
     "\\include\\model",
+    "\\include\\strategy",
     "\\include\\view",
     "\\src",
-    "\\src\\app",
     "\\src\\model",
+    "\\src\\strategy",
     "\\src\\view"
   ],
-  "SelectedNode": "\\include\\model\\Board.h",
+  "SelectedNode": "\\src\\view\\Announcer.cpp",
   "PreviewInSolutionExplorer": false
 }

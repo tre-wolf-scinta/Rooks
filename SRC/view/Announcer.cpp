@@ -1,25 +1,19 @@
 #include "view/Announcer.h"
-#include <stdexcept>
+#include <combaseapi.h>
 
-Announcer::Announcer(Board& board) : board_(board) {
-  board_.addObserver(this);
+Announcer::Announcer(Board& board)
+  : board_(board)
+{
   initVoice();
+  speak(L"Game started.");
 }
 
 Announcer::~Announcer() {
-  board_.removeObserver(this);
-  CoUninitialize();     // Needed to close the COM library for the thread
+  cleanupVoice();
 }
 
-bool Announcer::initVoice() {
-  HRESULT hr = CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED);
-  if (FAILED(hr) && hr != RPC_E_CHANGED_MODE)
-    return false;
-
-  // Create the SAPI voice object; ComPtr takes ownership automatically.
-  hr = CoCreateInstance(CLSID_SpVoice, nullptr, CLSCTX_ALL,
-    IID_ISpVoice, &voice_);
-  return SUCCEEDED(hr) && voice_;
+void Announcer::update() {
+  // Observer hook (unused for now)
 }
 
 void Announcer::speak(const std::wstring& msg) {
@@ -27,6 +21,21 @@ void Announcer::speak(const std::wstring& msg) {
   voice_->Speak(msg.c_str(), SPF_ASYNC, nullptr);
 }
 
-void Announcer::update() {
-  speak(L"Board updated.");
+bool Announcer::initVoice() {
+  HRESULT hr = CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED);
+  if (FAILED(hr) && hr != RPC_E_CHANGED_MODE) {
+    return false;
+  }
+
+  hr = ::CoCreateInstance(CLSID_SpVoice, nullptr, CLSCTX_ALL, IID_PPV_ARGS(&voice_));
+  if (FAILED(hr)) {
+    voice_.Reset();
+    return false;
+  }
+  return true;
+}
+
+void Announcer::cleanupVoice() {
+  voice_.Reset();
+  CoUninitialize();
 }

@@ -1,7 +1,5 @@
 \# Rooks
 
-
-
 \*\*Rooks\*\* is an accessible, cross-input chess game built in modern \*\*C++\*\* with \*\*SFML\*\* for rendering and \*\*Microsoft SAPI\*\* for speech output.  
 
 It allows sighted and blind players to enjoy chess together through a shared interface that’s both visually interactive and fully keyboard/screen-reader navigable.
@@ -35,8 +33,6 @@ It allows sighted and blind players to enjoy chess together through a shared int
 &nbsp; - Space to pick up a piece  
 
 &nbsp; - Enter to drop the piece  
-
-&nbsp; - Ctrl + Alt + S to hear capture summary  
 
 \- \*\*Speech Feedback (SAPI)\*\* — announces square color, piece type, and move results.  
 
@@ -137,9 +133,7 @@ cmake --build build --config Release
 * Arrow keys to move around the board
 * Spacebar to pick up a piece or cancel carrying a piece
 * Enter key to drop a piece
-* ctrl + alt + s to announce a summary of captures so far in the game
 * Mouse click (sighted players) select piece to move
-
 
 
 \## Project Structure

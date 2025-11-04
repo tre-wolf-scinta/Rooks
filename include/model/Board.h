@@ -2,6 +2,8 @@
 #include <memory>
 #include <array>
 #include "model/Piece.h"
+// Globals
+inline constexpr auto tileSize{ 80 }; // Inline to ensure each translation unit has the same value
 
 class Board {
 public:

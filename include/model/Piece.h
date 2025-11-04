@@ -1,9 +1,7 @@
 #pragma once
 #include <string>
 #include <memory>
-
-#include "strategy/IMove.h"
-#include "strategy/PawnStrategy.h"
+#include "Strategy/PieceStrategy.h"
 
 enum class PieceColor { White, Black };
 enum class PieceType { King, Queen, Rook, Bishop, Knight, Pawn };
@@ -16,6 +14,21 @@ public:
     switch (type_) {
     case PieceType::Pawn:
       strategy_ = std::make_unique<PawnStrategy>();
+      break;
+    case PieceType::Knight:
+      strategy_ = std::make_unique<KnightStrategy>();
+      break;
+    case PieceType::Bishop:
+      strategy_ = std::make_unique<BishopStrategy>();
+      break;
+    case PieceType::Rook:
+      strategy_ = std::make_unique<RookStrategy>();
+      break;
+    case PieceType::Queen:
+      strategy_ = std::make_unique<QueenStrategy>();
+      break;
+    case PieceType::King:
+      strategy_ = std::make_unique<KingStrategy>();
       break;
     default:
       strategy_.reset();

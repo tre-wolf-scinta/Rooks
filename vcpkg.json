@@ -1,5 +1,12 @@
 {
   "name": "rooks",
-  "version-string": "0.1.0",
-  "dependencies": [ "sfml" ]
+  "version-string": "1.0.0",
+  "builtin-baseline": "1b4a65242adfd65a82b1d1a6f31f1accdfe09af9",
+  "dependencies": [
+    {
+      "name": "sfml",
+      "default-features": false,
+      "features": ["graphics", "window", "system", "audio"]
+    }
+  ]
 }

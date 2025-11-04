@@ -1,0 +1,53 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 24,
+    "patch": 0
+  },
+
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "Default build (Release with vcpkg)",
+      "description": "Configure Rooks using vcpkg manifest mode and build into the 'build' folder.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      }
+    }
+  ],
+
+  "buildPresets": [
+    {
+      "name": "build",
+      "configurePreset": "default",
+      "displayName": "Build Rooks (Release)",
+      "description": "Build the Rooks executable from the default preset.",
+      "configuration": "Release"
+    }
+  ],
+
+  "testPresets": [
+    {
+      "name": "test",
+      "configurePreset": "default",
+      "displayName": "Run tests (if any)",
+      "description": "Runs tests after building, if test targets are defined.",
+      "execution": {
+        "steps": [
+          {
+            "type": "build",
+            "name": "build"
+          },
+          {
+            "type": "test",
+            "name": "ctest"
+          }
+        ]
+      }
+    }
+  ]
+}

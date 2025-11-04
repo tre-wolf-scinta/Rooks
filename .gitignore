@@ -6,24 +6,27 @@ Makefile
 install_manifest.txt
 compile_commands.json
 CMakeUserPresets.json
-CMakePresets.json
+# CMakePresets.json is intentionally tracked for the two-command build
 Testing/
 CTestTestfile.cmake
 *.cmake
 
 # ---- Build directories ----
 /build/
-/out/
-/bin/
-/obj/
-/Debug/
-/Release/
-/x64/
-/x86/
-/dist/
-/vsbuild/
+build-*/
+cmake-build-*/
+ /out/
+ /bin/
+ /obj/
+ /Debug/
+ /Release/
+ /x64/
+ /x86/
+ /dist/
+ /vsbuild/
 
 # ---- Visual Studio and MSVC ----
+.vs/
 *.sln
 *.vcxproj
 *.vcxproj.filters
@@ -33,17 +36,19 @@ CTestTestfile.cmake
 *.pdb
 *.ipch
 *.db
+*.VC.db
+*.VC.opendb
 *.tlog
 *.lastbuildstate
 *.user
 *.obj
 *.log
 *.idb
+*.exp
+*.ilk
 *.exe
 *.dll
 *.lib
-*.exp
-*.ilk
 
 # ---- SFML and vcpkg ----
 # Local vcpkg build directory (if not global)
@@ -70,9 +75,10 @@ desktop.ini
 *.swp
 *.old
 
-# ---- Logs ----
+# ---- Logs and dumps ----
 *.log
 *.stackdump
+*.dmp
 
 /release/
 *.zip
